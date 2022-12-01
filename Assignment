@@ -2,24 +2,92 @@
 Per Scholas Loop Assignments
 
 
-//1.Create Git / Github Repo
+-------------------------------------------//1.Create Git / Github Repo-------------------------------------------
 
-//2.Write a for loop that logs 0-15;
-
-for (let answer x=0; x<=15; x++){
-    console.log answer;
-}
-
-//3.Write a for loop that counts from 15-0
+-------------------------------------------//2.Write a for loop that logs 0-15;-------------------------------------------
 
 for (var answer = 1; answer <= 15; answer++) {
  console.log(answer);
 }
 
-//4.Make variable laps = 0; write a for loop that logs (“that’s another lap!”) and adds 1 to the laps variable. AFTER the loop, log laps.
-//5.git add, commit, push
-//6.Make variable age. Make a loop from 0-100. In every loop check if i == age, if so log something, else say “age doesn’t match”.
-//7.Write a loop that logs all even numbers from 0-700.
-//8.Write a loop that logs all odd numbers from 0-700.
-//9.Write a loop with some “if else” statements. The loop should start at 1900 and go to 1949 and log when things were invented. For example when i = 1902 the code should log “it is 1902 - the teddy bear is invented!”
-//10.git add, commit, push
+-------------------------------------------//3.Write a for loop that counts from 15-0-------------------------------------------
+
+for (var answer = 15; answer >= 0; answer--) {
+ console.log(answer);
+}
+
+-------------------------------------------//4.Make variable laps = 0; write a for loop that logs (“that’s another lap!”) and adds 1 to the laps variable. AFTER the loop, log laps.-------------------------------------------
+
+var laps = 0;
+for (var laps = 0; laps>=0; laps++){
+  console.log ("That's another lap! " + laps)
+}
+
+-------------------------------------------//5.git add, commit, push-------------------------------------------
+
+-------------------------------------------//6.Make variable age. Make a loop from 0-100. In every loop check if i == age, if so log something, else say “age doesn’t match”.-------------------------------------------
+
+for (var age = 1; age <= 100; age++) {
+   if (age == 22){
+    console.log("age doesn’t match")
+  }
+  else{
+    console.log("Age: " + age)
+  }
+}
+
+-------------------------------------------//7.Write a loop that logs all even numbers from 0-700.-------------------------------------------
+
+var n = 700;
+for (var i = 0; i <= n; i++){
+  if (i % 2 == 0){
+    console.log(i)
+  }
+}
+
+-------------------------------------------//8.Write a loop that logs all odd numbers from 0-700.-------------------------------------------
+
+var n = 700;
+for (var i = 0; i <= n; i++){
+  if (i % 2 == 1){
+    console.log(i)
+  }
+}
+
+-------------------------------------------//9.Write a loop with some “if else” statements. The loop should start at 1900 and go to 1949 and log when things were invented. For example when i = 1902 the code should log “it is 1902 - the teddy bear is invented!”-------------------------------------------
+
+var n = 1949;
+for (var i = 1900; i <= n; i++){
+  if( i == 1900){
+    console.log("it is 1900 - the zeppelin is invented!")
+  }
+  else if(i == 1902){
+    console.log("it is 1902 - the teddy bear is invented!")
+  }
+  else if(i == 1910){
+    console.log("it is 1910 - the talking motion picture is invented!")
+  }
+  else if(i == 1913){
+    console.log("it is 1913 - the bra is invented!")
+  }
+  else if(i == 1918){
+    console.log("it is 1918 - the fortune cookie is invented!")
+  }
+  else if(i == 1923){
+    console.log("it is 1923 - the traffic signal is invented!")
+  }
+  else if(i == 1935){
+    console.log("it is 1902 - the radar is invented!")
+  }
+  else if(i == 1938){
+    console.log("it is 1938 - the ballpoint pen is invented!")
+  }
+  else if(i == 1943){
+    console.log("it is 1943 - the slinky is invented!")
+  }
+  else{
+    console.log("it is " + i + " nothing notable invented")
+  }
+}
+
+-------------------------------------------//10.git add, commit, push-------------------------------------------
